@@ -136,3 +136,55 @@ nav ul li a{
   background-color: rgb(210, 210, 210);
 }
 /* Fine main */
+
+/* Inizio footer */
+footer{
+  display: flex;
+  height: 500px;
+  background-color: rgb(41, 43, 46);
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.footer.one{
+  width: 100%;
+  height: 85%;
+  border-bottom: 2px solid white;
+}
+
+.footer-box-big{
+  display: flex;
+  height: 100%;
+  width: 30%;
+  background-color: rgb(222, 133, 128);
+    border: 1px dashed white;
+}
+
+.footer-box-small{
+  display: flex;
+  height: 100%;
+  width: 20%;
+  background-color: rgb(90, 174, 168);
+  border: 1px dashed white;
+}
+
+.boxes-container{
+  height: 95%;
+  width: 80%;
+}
+
+
+
+/* .section-footer-two{
+  width: 80%;
+  height: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(161, 251, 210);
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: space-between;
+} */
