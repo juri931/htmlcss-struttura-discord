@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -17,23 +18,20 @@ header{
 
 .top{
   width: 80%;
-  height: 25px auto;
+  height: 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(207, 165, 39);
 }
 
 .logo{
-  width: 20%;
+  width: fit-content;
   text-align: center;
-  line-height: 25px;
-  background-color: rgb(207, 165, 39);
-  border: 2px dashed black;
 }
 
 .menu{
   width: 60%;
-  border: 2px dashed black;
   text-align: center;
   line-height: 25px;
 }
@@ -47,13 +45,17 @@ header{
 
 nav ul li a{
   text-decoration: none;
+  color: white;
 }
 
 .login{
-  width: 20%;
-  border: 2px dashed black;
+  width: fit-content;
+  padding: 5px;
   text-align: center;
-  line-height: 25px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 30px;
+  border-style: none;
 }
 /* Fine header */
 
@@ -77,11 +79,38 @@ nav ul li a{
   width: 70%;
   border: 2px dashed black;
   flex-wrap: wrap;
+  font-weight: 500;
+}
+
+.jumbo-box h1{
+  color: white;
+  font-weight: 900;
+}
+
+.jumbo-box p{
+  font-weight: 600;
+  color: white;
 }
 
 .jumbo-box a{
-  margin: 0 20%;
+  height: fit-content;
+  margin: 0 10%;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 15px;
+  border-style: none;
 }
+
+.download{
+  background-color: white;
+}
+
+.browser-mode{
+  background-color: black;
+  color: white;
+}
+
 /* Fine jumbo */
 
 /* Inizio main */
@@ -105,18 +134,25 @@ nav ul li a{
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   height: 100%;
-  width: 60%;
+  width: 70%;
   background-color: rgb(79, 142, 255);
 }
 
 .section-box-small{
   display: flex;
-  text-align: center;
+  text-align: center justify;
+  flex-flow: column;
   justify-content: center;
   height: 100%;
-  width: 40%;
+  width: 30%;
   background-color: rgb(244, 193, 203);
+  font-weight: 600;
+}
+
+.section-box-small p{
+  margin-top: 20px;
 }
 
 .two{
@@ -125,10 +161,24 @@ nav ul li a{
 
 .big-box{
   display: flex;
+  width: 100%;
   text-align: center;
   justify-content: center;
-  width: 100%;
+  flex-flow: column;
   background-color: rgb(71, 135, 37);
+}
+
+.download-bottom{
+  display: flex;
+  align-self: center;
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 15px;
+  border-style: none;
 }
 
 .three{
@@ -142,47 +192,109 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
   height: 500px;
   background-color: rgb(41, 43, 46);
-}
-
-.footer-one-container{
-  border-bottom: 2px solid white;
+  margin-bottom: -65px;
 }
 
 .footer-one{
   display: flex;
-  height: 90%;
+  height: 70%;
   width: 80%;
 }
 
 .footer-box-big{
   display: flex;
+  flex-flow: column;
   width: 30%;
-  background-color: rgb(222, 133, 128);
-  border: 1px dashed white;
+}
+
+.footer-box-big h2{
+  font-weight: 800;
+  color: rgb(101, 115, 178);
+}
+
+.language{
+  display: flex;
+  margin: 10px 0;
+  color: white;
+}
+
+/* Flag */
+.flag {
+  display: flex;
+  width: 28px;
+  height: 15px;
+  background-color: #F1F2F1;
+  position: relative;
+  margin: 0 5px;
+}
+
+.flag::before {
+  content: ' ';
+  position: absolute;
+  background-color: #009246;
+  width: 33.33%;
+  height: 15px;
+}
+
+.flag::after {
+  content: ' ';
+  position: absolute;
+  background-color: #CE2B37;
+  width: 33.33%;
+  height: 100%;
+  right: 0;
+  height: 15px;
+}
+
+.footer-box-img.span{
+  width: fit-content;
 }
 
 .footer-box-small{
   display: flex;
   width: 20%;
-  background-color: rgb(90, 174, 168);
-  border: 1px dashed white;
+}
+
+.socials svg{
+  color: white;
+  margin: 0 5px;
+}
+
+ul{
+  list-style: none;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-box-small li{
+  margin: 10px 0;
+}
+
+.list-head{
+  color: rgb(101, 115, 178);
+}
+
+hr{
+  display: flex;
+  margin: 30px;
+  width: 80%;
+  border-color: rgb(146, 160, 225);
 }
 
 /* Bottom row */
 .bottom-row{
   height: 70px;
   background-color: rgb(41, 43, 46);
-  border-top: 2px solid white;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .footer-two{
   display: flex;
-  background-color: rgb(161, 251, 210);
   height: 70%;
   width: 80%;
   justify-content: space-between;
@@ -195,8 +307,12 @@ footer{
   padding: 3px;
 }
 
-.button{
-  border: 1px dashed black;
-  background-color: rgb(242, 184, 193);
-  padding: 3px;
+.bottom-row a{
+  border-radius: 30px;
+  background-color: rgb(146, 160, 225);
+  padding: 9px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: small;
 }
